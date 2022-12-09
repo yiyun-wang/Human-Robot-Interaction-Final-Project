@@ -78,8 +78,8 @@ class TourRobot(Node):
         # Follow Waypoints
         self.navigator.startFollowWaypoints(self.goal_pose)
         
-        # Robot greets user and ask for their destination
-        self.robot_talker(robot_phrase='Hello, my name is Turtlbot. I will escort you to your destination.')
+        # Robot play sounds of 
+        self.sound_play(robot_phrase='')
 
         # Generate robot expression
         if(self.robot_expression == 'gesture'):
